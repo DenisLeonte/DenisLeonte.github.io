@@ -53,15 +53,52 @@
 
 <div class = "container-fluid padding">
     <div class = "col-12">
-		<p id = "tot"></p>
+		
+	</div>
+</div>
+
+<div class = "container-fluid">
+	<div class = "row padding" style = "width : 80%; padding-left : 10%">
+		<div class = "col-lg-6">
 		<div class = "radio">
-			<label><input type = "radio" name = "cpu_check" value = "450.00" onclick = "cpu_update()">AMD Ryzen 9 5900X</label><br>
-			<label><input type = "radio" name = "cpu_check" value = "399.99" onclick = "cpu_update()">AMD Ryzen 5 3600X</label><br>
-			<label><input type = "radio" name = "cpu_check" value = "550.00" onclick = "cpu_update()">AMD Ryzen 7 5000X</label><br>
-			<label><input type = "radio" name = "cpu_check" value = "599.99" onclick = "cpu_update()">AMD Ryzen 9 3950X</label><br>
-			<label><input type = "radio" name = "cpu_check" value = "299.99" onclick = "cpu_update()">Intel core i7 9900K</label><br>
-			<label><input type = "radio" name = "gpu_check" value = "399.99" onclick = "gpu_update()">Nvidia RTX 3060</label><br>
-			<label><input type = "radio" name = "gpu_check" value = "0" onclick = "gpu_update()">none</label><br>
+			<p1 class = "font-weight-bold">Choose your CPU</p1><br>
+			<label onmouseover = "change1()"><input type = "radio" name = "cpu_check" value = "450.00" onclick = "cpu_update()">AMD Ryzen 9 5900X (450.00€)</label><br>
+			<label onmouseover = "change2()"><input type = "radio" name = "cpu_check" value = "399.99" onclick = "cpu_update()">AMD Ryzen 5 3600X (399.99€)</label><br>
+			<label onmouseover = "change3()"><input type = "radio" name = "cpu_check" value = "550.00" onclick = "cpu_update()">AMD Ryzen 7 5000X (550.00€)</label><br>
+			<label onmouseover = "change4()"><input type = "radio" name = "cpu_check" value = "599.99" onclick = "cpu_update()">AMD Ryzen 9 3950X (599.99€)</label><br>
+			<label onmouseover = "change5()"><input type = "radio" name = "cpu_check" value = "460.00" onclick = "cpu_update()">Intel Core i9 10900K (460.00€)</label><br>
+			<label onmouseover = "change6()"><input type = "radio" name = "cpu_check" value = "340.00" onclick = "cpu_update()">Intel Core i7 10700K (340.00€)</label><br>
+			<label onmouseover = "change7()"><input type = "radio" name = "cpu_check" value = "240.00" onclick = "cpu_update()">Intel Core i5 10600K (240.00€)</label><br>
+			<p1 class = "font-weight-bold">Choose your GPU</p1><br>
+			<label onmouseover = "change8()"><input type = "radio" name = "gpu_check" value = "1299.99" onclick = "gpu_update()">Nvidia RTX 3090 (1299.99€)</label><br>
+			<label onmouseover = "change9()"><input type = "radio" name = "gpu_check" value = "580.00" onclick = "gpu_update()">Nvidia RTX 3080 (580.00€)</label><br>
+			<label onmouseover = "change10()"><input type = "radio" name = "gpu_check" value = "420.00" onclick = "gpu_update()">Nvidia RTX 3070 (420.00€)</label><br>
+			<label onmouseover = "change11()"><input type = "radio" name = "gpu_check" value = "399.99" onclick = "gpu_update()">Nvidia RTX 3060 (399.99€)</label><br>
+			<label onmouseover = "change12()"><input type = "radio" name = "gpu_check" value = "850.00" onclick = "gpu_update()">AMD Radeon 6900XT (850.00€)</label><br>
+			<label onmouseover = "change13()"><input type = "radio" name = "gpu_check" value = "540.00" onclick = "gpu_update()">AMD Radeon 6800XT (540.00€)</label><br>
+			<p1 class = "font-weight-bold">Talking about RAM...</p1><br>
+			<label onmouseover = "change15()"><input type = "radio" name = "ram_check" value = "40.00" onclick = "ram_update()">HyperX Fury 4GBx2 3200Mhz (40.00€)</label><br>
+			<label onmouseover = "change15()"><input type = "radio" name = "ram_check" value = "70.00" onclick = "ram_update()">HyperX Fury 8GBx2 3200Mhz (70.00€)</label><br>
+			<label onmouseover = "change16()"><input type = "radio" name = "ram_check" value = "140.00" onclick = "ram_update()">HyperX Fury 8GBx4 3200Mhz (140.00€)</label><br>
+			<label onmouseover = "change15()"><input type = "radio" name = "ram_check" value = "140.00" onclick = "ram_update()">HyperX Fury 16GBx2 3200Mhz (140.00€)</label><br>
+			<label onmouseover = "change15()"><input type = "radio" name = "ram_check" value = "230.00" onclick = "ram_update()">HyperX Fury 32GBx2 3200Mhz (230.00€)</label><br>
+			<label onmouseover = "change16()"><input type = "radio" name = "ram_check" value = "460.00" onclick = "ram_update()">HyperX Fury 32GBx4 3200Mhz (459.99€)</label><br>
+			<label onmouseover = "change18()"><input type = "radio" name = "ram_check" value = "75.00" onclick = "ram_update()">Corsair Vengeance PRO RGB 8GBx2 3200Mhz (75.00€)</label><br>
+			<label onmouseover = "change18()"><input type = "radio" name = "ram_check" value = "125.00" onclick = "ram_update()">Corsair Vengeance PRO RGB 16GBx2 3200Mhz (125.00€)</label><br>
+			<label onmouseover = "change19()"><input type = "radio" name = "ram_check" value = "150.00" onclick = "ram_update()">Corsair Vengeance PRO RGB 8GBx4 3200Mhz (150.00€)</label><br>
+			<label onmouseover = "change19()"><input type = "radio" name = "ram_check" value = "250.00" onclick = "ram_update()">Corsair Vengeance PRO RGB 16GBx4 3200Mhz (250.00€)</label><br>
+			<label onmouseover = "change18()"><input type = "radio" name = "ram_check" value = "220.00" onclick = "ram_update()">Corsair Vengeance PRO RGB 32GBx2 3200Mhz (220.00€)</label><br>
+			<label onmouseover = "change19()"><input type = "radio" name = "ram_check" value = "499.99" onclick = "ram_update()">Corsair Vengeance PRO RGB 32GBx4 3200Mhz (499.99€)</label><br>
+			<p1 class = "font-weight-bold">Talking about RAM...</p1><br>
+			<label onmouseover = "change20()"><input type = "radio" name = "case_check" value = "99.99" onclick = "case_updare()">Fractal Design Define 7 (99.99)</label><br>
+			<label onmouseover = "change21()"><input type = "radio" name = "case_check" value = "79.99" onclick = "case_updare()">Lian Li Lancool II Mesh (79.99)</label><br>
+			<label onmouseover = "change22()"><input type = "radio" name = "case_check" value = "50.00" onclick = "case_updare()">Phanteks Elite P300A (50.00)</label><br>
+		</div>
+		</div>
+		<div class = "col-lg-6">
+			<p1 class = "display-4">Total:</p1>
+			<p id = "tot" style = "display:inline; vertical-align:top;" class = "display-4">0</p><p id = "tot" style = "display:inline; vertical-align:top;" class = "display-4">€</p><br>
+			<img style = "max-height: 500px; max-width: 500px;" src = "img/components/white.png" id = "comp-img">
 		</div>
 	</div>
 </div>
@@ -69,35 +106,7 @@
 <!--- Footer -->
 <footer>
 	<div class = "container-fluid padding">
-		<div class = "row foot-er text-center">
-			<div class = "col-md-4">
-				<img src = "img/logo_white.png" height = 48px width = 48px>
-				<hr class = "light">
-				<p>+40 0740 925 079</p>
-				<p>denistechs@gmail.com</p>
-				<p>My Address</p>
-				<p>My City</p>
-			</div>
-			<div class = "col-md-4">
-				<hr class = "light">
-				<h5>Our Hours</h5>
-				<hr class = "light">
-				<p>Monday to fryday: 8:00 - 19:00</p>
-				<p>Saturday: 10:00 - 17:00</p>
-				<p>Sunday: closed</p>
-			</div>
-			<div class = "col-md-4">
-				<hr class = "light">
-				<h5>Where do we work</h5>
-				<hr class = "light">
-				<p>Suceava</p>
-				<p>Bucharest</p>
-				<p>Cluj</p>
-			</div>
-		</div>
-		
 		<div class = "col-12 text-center">
-			<hr class = "light-100">
 			<h5>&copy; denistechs</h5>
 		</div>
 	</div>
@@ -107,6 +116,8 @@
 	var total = 0;
 	var cpu_price = 0;
 	var gpu_price = 0;
+	var ram_price = 0;
+	var case_price = 0;
 
 	function cpu_update()
 	{
@@ -122,9 +133,120 @@
 		display();
 	}
 
+	function ram_update()
+	{
+		var ram_selected = document.querySelector('input[name="ram_check"]:checked').value;
+		ram_price = parseFloat(ram_selected);
+		display();
+	}
+
+	function case_update()
+	{
+		var case_selected = document.querySelector('input[name="case_check"]:checked').value;
+		case_price = parseFloat(case_selected);
+		display();
+	}
+
 	function display()
 	{
-		document.getElementById("tot").innerHTML = cpu_price + gpu_price;
+		document.getElementById("tot").innerHTML = cpu_price + gpu_price + ram_price + case_price;
+	}
+
+	function reset()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/white.png";
+	}
+	
+	function change1()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/1.png";
+	}
+	function change2()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/2.png";
+	}
+	function change3()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/3.png";
+	}
+	function change4()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/4.png";
+	}
+	function change5()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/5.png";
+	}
+	function change6()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/6.png";
+	}
+	function change7()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/7.png";
+	}
+	function change8()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/8.png";
+	}
+	function change9()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/9.png";
+	}
+	function change10()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/10.png";
+	}
+	function change11()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/11.png";
+	}
+	function change12()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/12.png";
+	}
+	function change13()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/13.png";
+	}
+	function change15()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/15.png";
+	}
+	function change16()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/16.png";
+	}
+	function change17()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/17.png";
+	}
+	function change18()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/18.png";
+	}
+	function change19()
+	{
+		var image = document.getElementById("comp-img");
+		image.src = "img/components/19.png";
 	}
 </script>
 </html>
